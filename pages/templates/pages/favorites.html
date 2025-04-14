@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Favorites List{% endblock %}
+{% block content %}
+<h1>My Favorites</h1>
+
+<h2>Foods</h2>
+
+<img src="{% static 'images/penguin_cake.jpeg' %}" alt="Penguin cake">
+
+<ul>
+  <li>Cake</li>
+  <li>Burgers</li>
+  <li>Crab</li>
+</ul>
+
+<a href="{% url 'pages:home' %}">Home</a>
+{% endblock %}

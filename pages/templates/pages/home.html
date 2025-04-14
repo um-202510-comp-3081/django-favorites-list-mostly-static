@@ -1,8 +1,11 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 {% block content %}
 <h1>Home</h1>
 
 <p>This is my shiny home page.</p>
+
+<img src="{% static 'images/penguin_cake.jpeg' %}" alt="Penguin cake">
 {% endblock %}

@@ -2,8 +2,10 @@
 <html>
 
 <head>
-  <title>>{% block title %}Favorites List{% endblock %}</title>
+  <title>{% block title %}Favorites List{% endblock %}</title>
   <meta charset="UTF-8">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
